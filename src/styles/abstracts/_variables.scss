@@ -1,0 +1,46 @@
+// COLOR TOKENS
+$cyan-600: #4d96a9;
+$cyan-300: #8fe3f9;
+$purple-600: #855fb1;
+$purple-300: #d9b8ff;
+$slate-900: #28283d;
+$slate-600: #87879d;
+$slate-300: #d1d1df;
+$white: #fafafa;
+
+// COLOR ALIASES
+$color-primary: $cyan-600;
+$color-accent: $purple-600;
+$color-heading: $slate-900;
+$color-body: $slate-600;
+$color-bg: $white;
+
+// SPACING SCALE
+$space-50: 0.5rem;
+$space-100: 1rem;
+$space-200: 1.5rem;
+$space-300: 2rem;
+$space-400: 2.5rem;
+$space-500: 4rem;
+
+// TYPOGRAPHY
+$font-heading-lg: 4rem;
+$font-heading-md: 2.4rem;
+$font-body: 1.8rem;
+$font-small: 1.6rem;
+$font-weight-regular: 500;
+$font-weight-semibold: 600;
+
+// BREAKPOINTS
+$breakpoint-sm: 600px;
+$breakpoint-md: 768px;
+$breakpoint-lg: 1024px;
+$breakpoint-xl: 1440px;
+
+// RADIUS
+$radius-sm: 0.4rem;
+$radius-md: 0.8rem;
+$radius-lg: 1.6rem;
+
+// SHADOWS (optional)
+$shadow-md: 0 4px 12px rgba(0, 0, 0, 0.1);
