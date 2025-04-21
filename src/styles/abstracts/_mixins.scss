@@ -47,6 +47,7 @@
 @mixin flex-row {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
 }
 
 @mixin flex-column {

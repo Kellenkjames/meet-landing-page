@@ -18,6 +18,39 @@
       href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap"
       rel="stylesheet"
     />
+    <link href="./src/styles/main.css" rel="stylesheet" />
   </head>
-  <body></body>
+  <body>
+    <nav class="nav">
+      <img src="./assets/logo.svg" alt="meet logo" />
+    </nav>
+    <section class="hero">
+      <div class="hero__layout">
+        <!-- Left Image: Only visible on desktop -->
+        <img
+          class="hero__image hero__image--left"
+          src="./assets/desktop/image-hero-left.png"
+          alt="Faces left"
+          aria-hidden="true"
+        />
+
+        <!-- Center Image: Only visible on tablet/mobile -->
+        <img
+          class="hero__image hero__image--center"
+          src="./assets/tablet/image-hero.png"
+          alt="Team collaboration illustration"
+        />
+
+        <!-- Right Image: Only visible on desktop -->
+        <img
+          class="hero__image hero__image--right"
+          src="./assets/desktop/image-hero-right.png"
+          alt="Faces right"
+          aria-hidden="true"
+        />
+      </div>
+
+      <div class="hero__content flex-column"></div>
+    </section>
+  </body>
 </html>

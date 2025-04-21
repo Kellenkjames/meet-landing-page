@@ -10,7 +10,7 @@ html {
 body {
   font-family: $font-primary;
   font-size: $font-body;
-  font-weight: $font-weight-regular;
+  font-weight: $font-weight-medium;
   line-height: 1.5;
   color: $color-body;
   background-color: $color-bg;
@@ -24,7 +24,7 @@ h4,
 h5,
 h6 {
   font-family: inherit;
-  font-weight: $font-weight-semibold;
+  font-weight: $font-weight-medium;
   color: $color-heading;
   line-height: 1.1;
   margin: 0;
@@ -37,7 +37,7 @@ p {
 
 // Emphasis
 strong {
-  font-weight: $font-weight-semibold;
+  font-weight: $font-weight-medium;
 }
 
 em {

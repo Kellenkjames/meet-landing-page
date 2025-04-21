@@ -1,0 +1,39 @@
+@import '../abstracts/mixins';
+
+// HERO
+
+.hero {
+  position: relative;
+
+  &__logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__image {
+    max-width: 100%;
+    display: block;
+
+    &--center {
+      display: none;
+
+      @include respond-to(lg) {
+        display: block;
+      }
+    }
+
+    &--left,
+    &--right {
+      display: block;
+
+      @include respond-to(lg) {
+        display: none;
+      }
+    }
+  }
+}
+
+.hero-layout {
+  @include space-between-center;
+}
