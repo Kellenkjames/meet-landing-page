@@ -8,7 +8,7 @@ html {
 }
 
 body {
-  font-family: 'Red Hat Display', sans-serif;
+  font-family: $font-primary;
   font-size: $font-body;
   font-weight: $font-weight-regular;
   line-height: 1.5;
