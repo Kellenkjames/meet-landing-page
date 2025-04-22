@@ -27,4 +27,14 @@
       }
     }
   }
+
+  &__text-content {
+    @include flex-column;
+    text-align: center;
+    max-width: 44.83rem;
+
+    &__title {
+      @include text-preset-1;
+    }
+  }
 }
