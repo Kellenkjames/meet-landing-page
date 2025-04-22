@@ -1,9 +1,8 @@
 @import '../abstracts/mixins';
 
-// HERO
-
 .hero {
   position: relative;
+  margin-block: 6.4rem;
 
   &__layout {
     @include space-between-center;
@@ -28,13 +27,18 @@
     }
   }
 
-  &__text-content {
+  &__content {
     @include flex-column;
     text-align: center;
     max-width: 44.83rem;
+  }
+  &__title {
+    @include text-preset-1;
+    margin-bottom: $space-400;
+  }
 
-    &__title {
-      @include text-preset-1;
-    }
+  &__subtitle {
+    @include text-preset-4;
+    margin-bottom: $space-400;
   }
 }

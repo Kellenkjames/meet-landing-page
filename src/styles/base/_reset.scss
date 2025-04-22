@@ -13,7 +13,6 @@ body {
 }
 
 body {
-  min-height: 100vh;
   line-height: 1.5;
   text-rendering: optimizeSpeed;
   -webkit-font-smoothing: antialiased;
@@ -36,4 +35,8 @@ select {
 a {
   text-decoration: none;
   color: inherit;
+}
+
+p {
+  margin: 0;
 }

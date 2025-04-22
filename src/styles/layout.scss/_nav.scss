@@ -3,14 +3,14 @@
 
 .nav {
   @include flex-center;
-  margin-top: 8rem;
+  margin-top: $space-1000;
 
   @include respond-to(md) {
-    margin-top: 6rem;
+    margin-top: 75%;
   }
 
   @include respond-to(sm) {
-    margin-top: 4rem;
+    margin-top: 50%;
   }
 
   img {
