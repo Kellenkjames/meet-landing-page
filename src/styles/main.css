@@ -131,6 +131,16 @@ a {
   align-items: center;
   margin-top: 8rem;
 }
+@media (max-width: 768px) {
+  .nav {
+    margin-top: 6rem;
+  }
+}
+@media (max-width: 600px) {
+  .nav {
+    margin-top: 4rem;
+  }
+}
 .nav img {
   width: auto;
   height: auto;

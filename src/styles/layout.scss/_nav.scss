@@ -5,6 +5,14 @@
   @include flex-center;
   margin-top: 8rem;
 
+  @include respond-to(md) {
+    margin-top: 6rem;
+  }
+
+  @include respond-to(sm) {
+    margin-top: 4rem;
+  }
+
   img {
     width: auto;
     height: auto;
