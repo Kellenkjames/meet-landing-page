@@ -29,10 +29,6 @@ $space-1400: 11.2rem; // 112px
 
 // TYPOGRAPHY
 $font-primary: 'Red Hat Display', sans-serif;
-$font-heading-lg: 4rem;
-$font-heading-md: 2.4rem;
-$font-body: 1.8rem;
-$font-small: 1.6rem;
 $font-weight-medium: 500;
 $font-weight-black: 900;
 
@@ -48,11 +44,3 @@ $breakpoints: (
   lg: $breakpoint-lg,
   xl: $breakpoint-xl,
 );
-
-// RADIUS
-$radius-sm: 0.4rem;
-$radius-md: 0.8rem;
-$radius-lg: 1.6rem;
-
-// SHADOWS (optional)
-$shadow-md: 0 4px 12px rgba(0, 0, 0, 0.1);

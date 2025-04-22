@@ -89,43 +89,23 @@
 
 // max-width: (mobile-first)
 @mixin respond-to($breakpoint) {
-  @if $breakpoint == sm {
-    @media (max-width: $breakpoint-sm) {
+  @if map-has-key($breakpoints, $breakpoint) {
+    @media (max-width: map-get($breakpoints, $breakpoint)) {
       @content;
     }
-  } @else if $breakpoint == md {
-    @media (max-width: $breakpoint-md) {
-      @content;
-    }
-  } @else if $breakpoint == lg {
-    @media (max-width: $breakpoint-lg) {
-      @content;
-    }
-  } @else if $breakpoint == xl {
-    @media (max-width: $breakpoint-xl) {
-      @content;
-    }
+  } @else {
+    @warn "Breakpoint '#{$breakpoint}' not found.";
   }
 }
 
 // min-width (desktop-first)
 @mixin respond-up($breakpoint) {
-  @if $breakpoint == sm {
-    @media (min-width: $breakpoint-sm) {
+  @if map-has-key($breakpoints, $breakpoint) {
+    @media (min-width: map-get($breakpoints, $breakpoint)) {
       @content;
     }
-  } @else if $breakpoint == md {
-    @media (min-width: $breakpoint-md) {
-      @content;
-    }
-  } @else if $breakpoint == lg {
-    @media (min-width: $breakpoint-lg) {
-      @content;
-    }
-  } @else if $breakpoint == xl {
-    @media (min-width: $breakpoint-xl) {
-      @content;
-    }
+  } @else {
+    @warn "Breakpoint '#{$breakpoint}' not found.";
   }
 }
 
