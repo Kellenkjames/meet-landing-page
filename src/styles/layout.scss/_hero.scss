@@ -7,6 +7,11 @@
 
   &__layout {
     @include space-between-center;
+    flex-wrap: wrap;
+
+    @include respond-to(xl-sm) {
+      justify-content: center;
+    }
   }
 
   &__image {
@@ -15,6 +20,10 @@
 
       @include respond-to(xl-sm) {
         display: block;
+      }
+      @include respond-to(xl-sm) {
+        width: 100%;
+        margin-bottom: $space-900;
       }
     }
 

@@ -172,6 +172,12 @@ p {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
+}
+@media (max-width: 1300px) {
+  .hero__layout {
+    justify-content: center;
+  }
 }
 .hero__image--center {
   display: none;
@@ -179,6 +185,12 @@ p {
 @media (max-width: 1300px) {
   .hero__image--center {
     display: block;
+  }
+}
+@media (max-width: 1300px) {
+  .hero__image--center {
+    width: 100%;
+    margin-bottom: 7.2rem;
   }
 }
 .hero__image--left, .hero__image--right {
