@@ -250,16 +250,6 @@ p {
   align-items: center;
   margin-top: 8rem;
 }
-@media (max-width: 768px) {
-  .nav {
-    margin-top: 75%;
-  }
-}
-@media (max-width: 600px) {
-  .nav {
-    margin-top: 50%;
-  }
-}
 .nav img {
   width: auto;
   height: auto;

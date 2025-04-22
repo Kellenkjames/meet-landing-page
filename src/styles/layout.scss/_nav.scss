@@ -5,14 +5,6 @@
   @include flex-center;
   margin-top: $space-1000;
 
-  @include respond-to(md) {
-    margin-top: 75%;
-  }
-
-  @include respond-to(sm) {
-    margin-top: 50%;
-  }
-
   img {
     width: auto;
     height: auto;
