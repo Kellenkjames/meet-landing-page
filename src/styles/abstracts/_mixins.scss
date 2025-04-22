@@ -1,6 +1,6 @@
 @import '../abstracts/variables';
 
-// Mixins
+// TYPOGRAPHY
 
 @mixin text-preset-1 {
   font-weight: $font-weight-black;
@@ -42,6 +42,21 @@
   font-size: 1.6rem; // 16px
   line-height: 150%;
   letter-spacing: 0;
+  color: $white;
+}
+
+// BUTTONS
+@mixin button-base {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: $space-200 $space-500;
+  border-radius: 2.9rem;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+
+  @include text-preset-5;
 }
 
 // FLEXBOX UTILITIES

@@ -1,0 +1,23 @@
+@import '../abstracts/variables';
+@import '../abstracts/mixins';
+
+/* Button Blue */
+.button--blue {
+  @include button-base;
+  background-color: $cyan-600;
+  color: $white;
+
+  span {
+    color: $cyan-300;
+    margin-left: 0.4rem;
+  }
+
+  &:hover {
+    background-color: $cyan-300;
+    color: $slate-900;
+
+    span {
+      color: inherit;
+    }
+  }
+}

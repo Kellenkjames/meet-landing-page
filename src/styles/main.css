@@ -103,6 +103,68 @@ p {
   margin: 0;
 }
 
+/* Button Blue */
+.button--blue {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1.6rem 4rem;
+  border-radius: 2.9rem;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+  font-weight: 900;
+  font-family: inherit;
+  font-size: 1.6rem;
+  line-height: 150%;
+  letter-spacing: 0;
+  color: #fafafa;
+  background-color: #4d96a9;
+  color: #fafafa;
+}
+.button--blue span {
+  color: #8fe3f9;
+  margin-left: 0.4rem;
+}
+.button--blue:hover {
+  background-color: #8fe3f9;
+  color: #28283d;
+}
+.button--blue:hover span {
+  color: inherit;
+}
+
+/* Button Blue */
+.button--purple {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1.6rem 4rem;
+  border-radius: 2.9rem;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+  font-weight: 900;
+  font-family: inherit;
+  font-size: 1.6rem;
+  line-height: 150%;
+  letter-spacing: 0;
+  color: #fafafa;
+  background-color: #855fb1;
+  color: #fafafa;
+}
+.button--purple span {
+  color: #8fe3f9;
+  margin-left: 0.4rem;
+}
+.button--purple:hover {
+  background-color: #8fe3f9;
+  color: #28283d;
+}
+.button--purple:hover span {
+  color: inherit;
+}
+
 .hero {
   position: relative;
   margin-block: 6.4rem;
@@ -134,6 +196,7 @@ p {
   align-items: center;
   text-align: center;
   max-width: 44.83rem;
+  gap: 3.2rem;
 }
 .hero__title {
   font-weight: 900;
@@ -142,7 +205,6 @@ p {
   line-height: 110%;
   letter-spacing: 0;
   color: #28283d;
-  margin-bottom: 3.2rem;
 }
 .hero__subtitle {
   font-weight: 500;
@@ -151,7 +213,12 @@ p {
   line-height: 110%;
   letter-spacing: 0;
   color: #87879d;
-  margin-bottom: 3.2rem;
+}
+.hero__cta-group {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 1.7rem;
 }
 
 .nav {
