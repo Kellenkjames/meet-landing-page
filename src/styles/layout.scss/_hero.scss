@@ -5,16 +5,11 @@
 .hero {
   position: relative;
 
-  &__logo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  &__layout {
+    @include space-between-center;
   }
 
   &__image {
-    max-width: 100%;
-    display: block;
-
     &--center {
       display: none;
 
@@ -32,8 +27,4 @@
       }
     }
   }
-}
-
-.hero-layout {
-  @include space-between-center;
 }

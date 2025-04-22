@@ -1,0 +1,14 @@
+@import '../abstracts/mixins';
+@import '../abstracts/variables';
+
+.nav {
+  @include flex-center;
+  margin-top: 8rem;
+
+  img {
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    object-fit: contain;
+  }
+}
