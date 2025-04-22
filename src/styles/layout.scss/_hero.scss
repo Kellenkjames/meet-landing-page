@@ -25,6 +25,23 @@
         display: none;
       }
     }
+
+    // Desktop-only image offsets (Figma fidelity)
+    &--left {
+      @include respond-up(xl) {
+        position: relative;
+        transform: translateX(
+          -3rem
+        ); // tuned from Figma (-186px) → optical balance
+      }
+    }
+
+    &--right {
+      @include respond-up(xl) {
+        position: relative;
+        transform: translate(3rem, 3rem);
+      }
+    }
   }
 
   &__content {
@@ -33,6 +50,7 @@
     max-width: 44.83rem;
     gap: $space-400;
   }
+
   &__title {
     @include text-preset-1;
   }
