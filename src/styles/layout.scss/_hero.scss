@@ -13,7 +13,7 @@
     &--center {
       display: none;
 
-      @include respond-to(lg) {
+      @include respond-to(xl-sm) {
         display: block;
       }
     }
@@ -22,14 +22,14 @@
     &--right {
       display: block;
 
-      @include respond-to(lg) {
+      @include respond-to(xl-sm) {
         display: none;
       }
     }
 
     // Desktop-only image offsets (Figma fidelity)
     &--left {
-      @include respond-up(xl) {
+      @include respond-up(xl-sm) {
         position: relative;
         transform: translateX(
           -3rem
@@ -38,7 +38,7 @@
     }
 
     &--right {
-      @include respond-up(xl) {
+      @include respond-up(xl-sm) {
         position: relative;
         transform: translate(3rem, 3rem);
       }
