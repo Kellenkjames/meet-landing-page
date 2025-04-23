@@ -161,6 +161,7 @@ p {
   width: 5.6rem;
   border: 1px solid #d1d1df;
   border-radius: 100%;
+  margin-bottom: 6.4rem;
 }
 .number::before {
   content: "";
@@ -178,6 +179,22 @@ p {
   line-height: 150%;
   letter-spacing: 0;
   color: #87879d;
+}
+
+.images {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 3.2rem;
+}
+.images__img {
+  width: 100%;
+  max-width: 25.6rem;
+  height: 25.6rem;
+  border-radius: 1rem;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .hero {

@@ -1,0 +1,15 @@
+@import '../abstracts/variables';
+@import '../abstracts/mixins';
+
+.images {
+  @include space-between-center;
+  gap: $space-400;
+
+  &__img {
+    width: 100%;
+    max-width: 25.6rem;
+    height: 25.6rem;
+    border-radius: 1rem;
+    object-fit: cover;
+  }
+}
