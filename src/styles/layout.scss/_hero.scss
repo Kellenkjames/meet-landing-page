@@ -3,7 +3,7 @@
 
 .hero {
   position: relative;
-  margin-block: 6.4rem;
+  padding: 6.4rem 8rem;
 
   &__layout {
     @include space-between-center;

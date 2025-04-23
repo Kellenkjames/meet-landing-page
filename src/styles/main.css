@@ -116,7 +116,6 @@ p {
   font-size: 1.6rem;
   line-height: 150%;
   letter-spacing: 0;
-  color: #fafafa;
   background-color: #4d96a9;
   color: #fafafa;
 }
@@ -142,7 +141,6 @@ p {
   font-size: 1.6rem;
   line-height: 150%;
   letter-spacing: 0;
-  color: #fafafa;
   background-color: #855fb1;
   color: #fafafa;
 }
@@ -154,9 +152,36 @@ p {
   background-color: #9f81c2;
 }
 
+.number {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  height: 5.6rem;
+  width: 5.6rem;
+  border: 1px solid #d1d1df;
+  border-radius: 100%;
+}
+.number ::before {
+  content: "";
+  position: absolute;
+  border: 0.1rem solid #d1d1df;
+  height: 8rem;
+  left: 50%;
+  bottom: 100%;
+}
+.number__value {
+  font-weight: 900;
+  font-family: inherit;
+  font-size: 1.6rem;
+  line-height: 150%;
+  letter-spacing: 0;
+  color: #87879d;
+}
+
 .hero {
   position: relative;
-  margin-block: 6.4rem;
+  padding: 6.4rem 8rem;
 }
 .hero__layout {
   display: flex;
@@ -232,6 +257,29 @@ p {
   flex-direction: row;
   flex-wrap: wrap;
   gap: 1.7rem;
+}
+
+.main_content {
+  padding-left: 8rem;
+  padding-right: 8rem;
+  padding-top: 11.2rem;
+  padding-bottom: 11.2rem;
+}
+
+.container {
+  width: 100%;
+  max-width: 1120px;
+  margin-inline: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6.4rem;
+  margin-block: 5.6rem 7.2rem;
+}
+@media (max-width: 600px) {
+  .container {
+    padding-inline: 0.8rem;
+  }
 }
 
 .nav {

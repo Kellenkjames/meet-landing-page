@@ -1,0 +1,17 @@
+@import '../abstracts/variables';
+@import '../abstracts/mixins';
+
+.main_content {
+  padding-left: $space-1000;
+  padding-right: $space-1000;
+  padding-top: $space-1400;
+  padding-bottom: $space-1400;
+}
+
+.container {
+  @include container;
+  @include flex-column;
+  gap: 6.4rem;
+
+  margin-block: 5.6rem 7.2rem;
+}

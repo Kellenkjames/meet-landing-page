@@ -1,0 +1,25 @@
+@import '../abstracts/variables';
+@import '../abstracts/mixins';
+
+.number {
+  @include flex-center;
+  position: relative;
+  height: 5.6rem;
+  width: 5.6rem;
+  border: 1px solid $slate-300;
+  border-radius: 100%;
+
+  ::before {
+    content: '';
+    position: absolute;
+    border: 0.1rem solid $slate-300;
+    height: 8rem;
+    left: 50%;
+    bottom: 100%;
+  }
+
+  &__value {
+    @include text-preset-5;
+    color: $slate-600;
+  }
+}
