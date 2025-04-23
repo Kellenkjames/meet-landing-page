@@ -1,0 +1,49 @@
+@import '../abstracts/variables';
+@import '../abstracts/mixins';
+
+.footer {
+  background-image: url('../../../assets/desktop/image-footer.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  position: relative;
+
+  &::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-color: rgba(77, 150, 169, 0.8); // $cyan-600 with 80% opacity
+    z-index: 0;
+  }
+
+  // Ensures both inner containers sit above the background overlay
+  &__number-wrapper,
+  &__cta {
+    position: relative;
+    z-index: 1;
+  }
+
+  &__number-wrapper {
+    @include container;
+    @include flex-center;
+    padding-top: $space-1000;
+  }
+
+  &__cta {
+    @include container;
+    @include space-between-center;
+    gap: $space-400;
+    min-height: 41rem;
+  }
+
+  &__title {
+    @include text-preset-2;
+    color: $white;
+  }
+
+  &__desc {
+    @include text-preset-4;
+    color: $white;
+  }
+}
