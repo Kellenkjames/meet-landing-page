@@ -161,7 +161,6 @@ p {
   width: 5.6rem;
   border: 1px solid #d1d1df;
   border-radius: 100%;
-  margin-bottom: 6.4rem;
 }
 .number::before {
   content: "";
