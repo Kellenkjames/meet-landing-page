@@ -3,7 +3,7 @@
 
 .nav {
   @include flex-center;
-  margin-top: $space-1000;
+  padding-top: $space-1000;
 
   img {
     width: auto;

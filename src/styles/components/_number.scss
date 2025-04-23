@@ -9,13 +9,14 @@
   border: 1px solid $slate-300;
   border-radius: 100%;
 
-  ::before {
+  &::before {
     content: '';
     position: absolute;
-    border: 0.1rem solid $slate-300;
+    border-left: 0.1rem solid $slate-300;
     height: 8rem;
     left: 50%;
     bottom: 100%;
+    transform: translateX(-50%);
   }
 
   &__value {

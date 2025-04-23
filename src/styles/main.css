@@ -162,13 +162,14 @@ p {
   border: 1px solid #d1d1df;
   border-radius: 100%;
 }
-.number ::before {
+.number::before {
   content: "";
   position: absolute;
-  border: 0.1rem solid #d1d1df;
+  border-left: 0.1rem solid #d1d1df;
   height: 8rem;
   left: 50%;
   bottom: 100%;
+  transform: translateX(-50%);
 }
 .number__value {
   font-weight: 900;
@@ -286,7 +287,7 @@ p {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 8rem;
+  padding-top: 8rem;
 }
 .nav img {
   width: auto;
