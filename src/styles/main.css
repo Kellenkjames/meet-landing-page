@@ -114,7 +114,7 @@ p {
   font-weight: 900;
   font-family: inherit;
   font-size: 1.6rem;
-  line-height: 150%;
+  line-height: 1.5;
   letter-spacing: 0;
   background-color: #4d96a9;
   color: #fafafa;
@@ -139,7 +139,7 @@ p {
   font-weight: 900;
   font-family: inherit;
   font-size: 1.6rem;
-  line-height: 150%;
+  line-height: 1.5;
   letter-spacing: 0;
   background-color: #855fb1;
   color: #fafafa;
@@ -175,7 +175,7 @@ p {
   font-weight: 900;
   font-family: inherit;
   font-size: 1.6rem;
-  line-height: 150%;
+  line-height: 1.5;
   letter-spacing: 0;
   color: #87879d;
 }
@@ -194,6 +194,44 @@ p {
   border-radius: 1rem;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.text-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  max-width: 54.4rem;
+  margin-inline: auto;
+  gap: 3.2rem;
+}
+.text-content__header {
+  max-width: 44.5rem;
+  margin-inline: auto;
+}
+.text-content__title {
+  font-weight: 900;
+  font-family: inherit;
+  font-size: 1.6rem;
+  line-height: 1.2;
+  letter-spacing: 0.4rem;
+  color: #4d96a9;
+  margin-bottom: 1.6rem;
+  text-transform: uppercase;
+}
+.text-content__subtitle {
+  font-weight: 900;
+  font-family: inherit;
+  font-size: 4rem;
+  line-height: 1.2;
+  letter-spacing: 0;
+}
+.text-content__desc {
+  font-weight: 500;
+  font-family: inherit;
+  font-size: 1.8rem;
+  line-height: 1.6;
+  letter-spacing: 0;
 }
 
 .hero {
@@ -257,17 +295,15 @@ p {
   font-weight: 900;
   font-family: inherit;
   font-size: 6.4rem;
-  line-height: 110%;
+  line-height: 1.1;
   letter-spacing: 0;
-  color: #28283d;
 }
 .hero__subtitle {
   font-weight: 500;
   font-family: inherit;
   font-size: 1.8rem;
-  line-height: 110%;
+  line-height: 1.6;
   letter-spacing: 0;
-  color: #87879d;
 }
 .hero__cta-group {
   display: flex;

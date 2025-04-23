@@ -1,2 +1,29 @@
 @import '../abstracts/variables';
 @import '../abstracts/mixins';
+
+.text-content {
+  @include flex-column;
+  text-align: center;
+  max-width: 54.4rem;
+  margin-inline: auto;
+  gap: $space-400;
+
+  &__header {
+    max-width: 44.5rem;
+    margin-inline: auto;
+  }
+
+  &__title {
+    @include text-preset-3;
+    color: $cyan-600;
+    margin-bottom: $space-200;
+    text-transform: uppercase;
+  }
+  &__subtitle {
+    @include text-preset-2;
+  }
+
+  &__desc {
+    @include text-preset-4;
+  }
+}
