@@ -1,23 +1,19 @@
 @import '../abstracts/variables';
 @import '../abstracts/mixins';
 
-/* Button Blue */
+$purple-hover: lighten($purple-600, 10%);
+
 .button--purple {
   @include button-base;
-  background-color: $color-accent;
+  background-color: $purple-600;
   color: $white;
 
   span {
-    color: $cyan-300;
+    color: $purple-300;
     margin-left: 0.4rem;
   }
 
   &:hover {
-    background-color: $cyan-300;
-    color: $slate-900;
-
-    span {
-      color: inherit;
-    }
+    background-color: $purple-hover;
   }
 }

@@ -102,7 +102,6 @@ p {
   margin: 0;
 }
 
-/* Button Blue */
 .button--blue {
   display: inline-flex;
   justify-content: center;
@@ -111,7 +110,7 @@ p {
   border-radius: 2.9rem;
   text-decoration: none;
   cursor: pointer;
-  transition: background-color 0.2s ease-in-out;
+  transition: background-color 0.3s ease-in-out;
   font-weight: 900;
   font-family: inherit;
   font-size: 1.6rem;
@@ -126,14 +125,9 @@ p {
   margin-left: 0.4rem;
 }
 .button--blue:hover {
-  background-color: #8fe3f9;
-  color: #28283d;
-}
-.button--blue:hover span {
-  color: inherit;
+  background-color: #6dacbc;
 }
 
-/* Button Blue */
 .button--purple {
   display: inline-flex;
   justify-content: center;
@@ -142,7 +136,7 @@ p {
   border-radius: 2.9rem;
   text-decoration: none;
   cursor: pointer;
-  transition: background-color 0.2s ease-in-out;
+  transition: background-color 0.3s ease-in-out;
   font-weight: 900;
   font-family: inherit;
   font-size: 1.6rem;
@@ -153,15 +147,11 @@ p {
   color: #fafafa;
 }
 .button--purple span {
-  color: #8fe3f9;
+  color: #d9b8ff;
   margin-left: 0.4rem;
 }
 .button--purple:hover {
-  background-color: #8fe3f9;
-  color: #28283d;
-}
-.button--purple:hover span {
-  color: inherit;
+  background-color: #9f81c2;
 }
 
 .hero {

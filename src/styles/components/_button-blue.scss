@@ -1,7 +1,8 @@
 @import '../abstracts/variables';
 @import '../abstracts/mixins';
 
-/* Button Blue */
+$cyan-hover: lighten($cyan-600, 10%);
+
 .button--blue {
   @include button-base;
   background-color: $cyan-600;
@@ -13,11 +14,6 @@
   }
 
   &:hover {
-    background-color: $cyan-300;
-    color: $slate-900;
-
-    span {
-      color: inherit;
-    }
+    background-color: $cyan-hover;
   }
 }
