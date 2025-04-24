@@ -250,6 +250,12 @@ p {
   background-repeat: no-repeat;
   margin-top: 10.8rem;
 }
+@media (max-width: 1300px) {
+  .footer {
+    background-image: url("../../../assets/tablet/image-footer.jpg");
+    background-position: top center;
+  }
+}
 .footer::before {
   content: "";
   position: absolute;
@@ -261,7 +267,6 @@ p {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 5.6rem;
   position: relative;
   z-index: 1;
 }
@@ -280,6 +285,15 @@ p {
   min-height: 31.2rem;
   text-align: left;
 }
+@media (max-width: 1300px) {
+  .footer__cta {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-block: 6.4rem;
+    min-height: auto;
+  }
+}
 .footer__title {
   font-weight: 900;
   font-family: inherit;
@@ -296,6 +310,12 @@ p {
   letter-spacing: 0;
   color: #fafafa;
   max-width: 32ch;
+}
+@media (max-width: 1300px) {
+  .footer__desc {
+    max-width: 75%;
+    text-align: center;
+  }
 }
 
 .hero {

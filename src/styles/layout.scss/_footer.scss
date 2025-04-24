@@ -7,6 +7,11 @@
   background-repeat: no-repeat;
   margin-top: 10.8rem;
 
+  @include respond-to(xl-sm) {
+    background-image: url('../../../assets/tablet/image-footer.jpg');
+    background-position: top center;
+  }
+
   &::before {
     content: '';
     position: absolute;
@@ -17,7 +22,6 @@
 
   &__inner {
     @include flex-column;
-    gap: $space-700;
     position: relative;
     z-index: 1;
   }
@@ -35,6 +39,12 @@
     gap: $space-400;
     min-height: 31.2rem;
     text-align: left;
+
+    @include respond-to(xl-sm) {
+      @include flex-column;
+      margin-block: 6.4rem;
+      min-height: auto;
+    }
   }
 
   &__title {
@@ -46,5 +56,10 @@
     @include text-preset-4;
     color: $white;
     max-width: 32ch;
+
+    @include respond-to(xl-sm) {
+      max-width: 75%;
+      text-align: center;
+    }
   }
 }
