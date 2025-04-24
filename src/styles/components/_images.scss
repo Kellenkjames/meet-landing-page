@@ -6,6 +6,18 @@
   flex-wrap: wrap;
   gap: $space-400;
 
+  @include respond-to(xl-sm) {
+    // e.g., 1280px
+    justify-content: center;
+    gap: $space-300;
+
+    .images__img {
+      flex: 1 1 calc(50% - $space-300);
+      max-width: calc(50% - $space-300);
+      height: auto;
+    }
+  }
+
   &__img {
     width: 100%;
     max-width: 25.6rem;

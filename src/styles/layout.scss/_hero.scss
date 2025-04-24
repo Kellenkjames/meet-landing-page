@@ -10,7 +10,9 @@
     flex-wrap: wrap;
 
     @include respond-to(xl-sm) {
+      @include flex-column;
       justify-content: center;
+      gap: $space-900;
     }
   }
 
