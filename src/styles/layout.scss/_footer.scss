@@ -1,39 +1,38 @@
-@import '../abstracts/variables';
-@import '../abstracts/mixins';
-
 .footer {
+  position: relative;
+  overflow: visible; // ← allow the number-wrapper to visually escape upward
   background-image: url('../../../assets/desktop/image-footer.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  overflow: hidden;
-  position: relative;
+  margin-top: 10.8rem;
 
   &::before {
     content: '';
     position: absolute;
     inset: 0;
-    background-color: rgba(77, 150, 169, 0.8); // $cyan-600 with 80% opacity
+    background-color: rgba(77, 150, 169, 0.8); // overlay
     z-index: 0;
-  }
-
-  // Ensures both inner containers sit above the background overlay
-  &__number-wrapper,
-  &__cta {
-    position: relative;
-    z-index: 1;
   }
 
   &__number-wrapper {
     @include container;
     @include flex-center;
+
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2; // above overlay
   }
 
   &__cta {
     @include container;
     @include space-between-center;
     gap: $space-400;
-    min-height: 41rem;
+    min-height: 31.2rem;
+    position: relative;
+    z-index: 1;
   }
 
   &__title {
