@@ -4,6 +4,7 @@
 .hero {
   position: relative;
   padding-block: 6.4rem;
+  padding-inline: 2rem;
 
   &__layout {
     @include space-between-center;
@@ -12,7 +13,7 @@
     @include respond-to(xl-sm) {
       @include flex-column;
       justify-content: center;
-      gap: $space-900;
+      gap: $space-300;
     }
   }
 

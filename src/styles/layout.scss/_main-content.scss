@@ -2,10 +2,11 @@
 @import '../abstracts/mixins';
 
 .main_content {
-  padding-left: $space-1000;
-  padding-right: $space-1000;
-  padding-top: $space-1400;
-  padding-bottom: $space-1400;
+  padding: $space-1400 $space-1000;
+
+  @include respond-to(sm) {
+    padding: $space-500 $space-300;
+  }
 
   &__inner {
     @include flex-column;

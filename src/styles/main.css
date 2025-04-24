@@ -57,13 +57,8 @@ body {
 
 .container {
   width: 100%;
-  max-width: 1120px;
+  max-width: 112rem;
   margin-inline: auto;
-}
-@media (max-width: 600px) {
-  .container {
-    padding-inline: 0.8rem;
-  }
 }
 
 /* RESET */
@@ -244,6 +239,11 @@ p {
   line-height: 1.2;
   letter-spacing: 0;
 }
+@media (max-width: 600px) {
+  .text-content__subtitle {
+    font-size: 3.5rem;
+  }
+}
 .text-content__desc {
   font-weight: 500;
   font-family: inherit;
@@ -265,6 +265,11 @@ p {
   .footer {
     background-image: url("../../../assets/tablet/image-footer.jpg");
     background-position: top center;
+  }
+}
+@media (max-width: 600px) {
+  .footer {
+    background-image: url("../../../assets/mobile/image-footer.jpg");
   }
 }
 .footer::before {
@@ -294,7 +299,6 @@ p {
   align-items: center;
   gap: 3.2rem;
   min-height: 31.2rem;
-  text-align: left;
 }
 @media (max-width: 1300px) {
   .footer__cta {
@@ -305,6 +309,11 @@ p {
     min-height: auto;
   }
 }
+@media (max-width: 600px) {
+  .footer__cta {
+    text-align: center;
+  }
+}
 .footer__title {
   font-weight: 900;
   font-family: inherit;
@@ -312,6 +321,11 @@ p {
   line-height: 1.2;
   letter-spacing: 0;
   color: #fafafa;
+}
+@media (max-width: 600px) {
+  .footer__title {
+    font-size: 3.5rem;
+  }
 }
 .footer__desc {
   font-weight: 500;
@@ -332,6 +346,7 @@ p {
 .hero {
   position: relative;
   padding-block: 6.4rem;
+  padding-inline: 2rem;
 }
 .hero__layout {
   display: flex;
@@ -345,7 +360,7 @@ p {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 7.2rem;
+    gap: 2.4rem;
   }
 }
 .hero__image--center {
@@ -397,6 +412,11 @@ p {
   line-height: 1.1;
   letter-spacing: 0;
 }
+@media (max-width: 600px) {
+  .hero__title {
+    font-size: 5rem;
+  }
+}
 .hero__subtitle {
   font-weight: 500;
   font-family: inherit;
@@ -408,14 +428,17 @@ p {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  justify-content: center;
   gap: 1.7rem;
 }
 
 .main_content {
-  padding-left: 8rem;
-  padding-right: 8rem;
-  padding-top: 11.2rem;
-  padding-bottom: 11.2rem;
+  padding: 11.2rem 8rem;
+}
+@media (max-width: 600px) {
+  .main_content {
+    padding: 4rem 2.4rem;
+  }
 }
 .main_content__inner {
   display: flex;

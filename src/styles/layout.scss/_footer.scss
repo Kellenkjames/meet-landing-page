@@ -12,6 +12,10 @@
     background-position: top center;
   }
 
+  @include respond-to(sm) {
+    background-image: url('../../../assets/mobile/image-footer.jpg');
+  }
+
   &::before {
     content: '';
     position: absolute;
@@ -38,12 +42,15 @@
     @include space-between-center;
     gap: $space-400;
     min-height: 31.2rem;
-    text-align: left;
 
     @include respond-to(xl-sm) {
       @include flex-column;
       margin-block: 6.4rem;
       min-height: auto;
+    }
+
+    @include respond-to(sm) {
+      text-align: center;
     }
   }
 
