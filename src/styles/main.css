@@ -39,6 +39,7 @@ em {
 /* GLOBAL STYLES */
 body {
   min-height: 100vh;
+  overflow-x: hidden;
   background-color: #fafafa;
 }
 
@@ -254,7 +255,6 @@ p {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-top: 8rem;
 }
 @media (max-width: 600px) {
   .footer__number-wrapper {
@@ -295,7 +295,7 @@ p {
 
 .hero {
   position: relative;
-  padding: 6.4rem 8rem;
+  padding-block: 6.4rem;
 }
 .hero__layout {
   display: flex;

@@ -27,7 +27,6 @@
   &__number-wrapper {
     @include container;
     @include flex-center;
-    padding-top: $space-1000;
   }
 
   &__cta {

@@ -1,8 +1,8 @@
 /* GLOBAL STYLES */
 
-// Base typography (if not already in _typography.scss)
 body {
   min-height: 100vh;
+  overflow-x: hidden;
   background-color: $white;
 }
 
