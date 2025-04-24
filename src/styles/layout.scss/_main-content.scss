@@ -6,12 +6,10 @@
   padding-right: $space-1000;
   padding-top: $space-1400;
   padding-bottom: $space-1400;
-}
 
-.container {
-  @include container;
-  @include flex-column;
-  gap: 6.4rem;
-
-  margin-block: 5.6rem 7.2rem;
+  &__inner {
+    @include flex-column;
+    gap: 6.4rem;
+    margin-block: $space-700 $space-900;
+  }
 }

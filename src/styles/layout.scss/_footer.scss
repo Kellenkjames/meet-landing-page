@@ -1,6 +1,6 @@
 .footer {
   position: relative;
-  overflow: visible; // ← allow the number-wrapper to visually escape upward
+  overflow: visible;
   background-image: url('../../../assets/desktop/image-footer.jpg');
   background-size: cover;
   background-position: center;
@@ -15,24 +15,27 @@
     z-index: 0;
   }
 
-  &__number-wrapper {
-    @include container;
-    @include flex-center;
+  &__inner {
+    @include flex-column;
+    align-items: center;
+    gap: $space-700;
+    position: relative;
+    z-index: 1;
+  }
 
+  .number {
     position: absolute;
     top: 0;
     left: 50%;
     transform: translate(-50%, -50%);
-    z-index: 2; // above overlay
+    z-index: 2;
   }
 
   &__cta {
-    @include container;
     @include space-between-center;
     gap: $space-400;
     min-height: 31.2rem;
-    position: relative;
-    z-index: 1;
+    text-align: left;
   }
 
   &__title {
@@ -43,5 +46,6 @@
   &__desc {
     @include text-preset-4;
     color: $white;
+    max-width: 30ch;
   }
 }

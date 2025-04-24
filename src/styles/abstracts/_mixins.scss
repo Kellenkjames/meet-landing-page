@@ -105,14 +105,3 @@
     @warn "Breakpoint '#{$breakpoint}' not found.";
   }
 }
-
-// SUB_ZONE CONTAINER
-@mixin container {
-  width: 100%;
-  max-width: 1120px;
-  margin-inline: auto;
-
-  @include respond-to(sm) {
-    padding-inline: $space-100;
-  }
-}
