@@ -3,27 +3,30 @@
 
 .text-content {
   @include flex-column;
+  gap: $space-400;
   text-align: center;
   max-width: 54.4rem;
   margin-inline: auto;
-  gap: $space-400;
 
   &__header {
+    @include flex-column;
+    gap: $space-200;
     max-width: 44.5rem;
     margin-inline: auto;
   }
 
   &__title {
     @include text-preset-3;
-    color: $cyan-600;
-    margin-bottom: $space-200;
+    color: $color-primary;
     text-transform: uppercase;
   }
+
   &__subtitle {
     @include text-preset-2;
   }
 
   &__desc {
     @include text-preset-4;
+    color: $color-body;
   }
 }

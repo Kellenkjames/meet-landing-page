@@ -221,12 +221,18 @@ p {
   flex-wrap: nowrap;
   justify-content: center;
   align-items: center;
+  gap: 3.2rem;
   text-align: center;
   max-width: 54.4rem;
   margin-inline: auto;
-  gap: 3.2rem;
 }
 .text-content__header {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1.6rem;
   max-width: 44.5rem;
   margin-inline: auto;
 }
@@ -237,7 +243,6 @@ p {
   line-height: 1.2;
   letter-spacing: 0.4rem;
   color: #4d96a9;
-  margin-bottom: 1.6rem;
   text-transform: uppercase;
 }
 .text-content__subtitle {
@@ -258,6 +263,7 @@ p {
   font-size: 1.8rem;
   line-height: 1.6;
   letter-spacing: 0;
+  color: #87879d;
 }
 
 .footer {
