@@ -3,8 +3,8 @@
 
 .hero {
   position: relative;
-  padding-block: 6.4rem;
-  padding-inline: 2rem;
+  padding-block: $space-800;
+  padding-inline: $space-200;
 
   &__layout {
     @include space-between-center;
@@ -23,8 +23,6 @@
 
       @include respond-to(xl-sm) {
         display: block;
-      }
-      @include respond-to(xl-sm) {
         width: 100%;
         margin-bottom: $space-900;
       }
@@ -39,13 +37,11 @@
       }
     }
 
-    // Desktop-only image offsets (Figma fidelity)
+    // Desktop-only image offsets (subtle Figma adjustment)
     &--left {
       @include respond-up(xl-sm) {
         position: relative;
-        transform: translateX(
-          -3rem
-        ); // tuned from Figma (-186px) → optical balance
+        transform: translateX(-3rem);
       }
     }
 

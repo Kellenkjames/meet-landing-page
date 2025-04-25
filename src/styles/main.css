@@ -365,7 +365,7 @@ p {
 .hero {
   position: relative;
   padding-block: 6.4rem;
-  padding-inline: 2rem;
+  padding-inline: 1.6rem;
 }
 .hero__layout {
   display: flex;
@@ -392,10 +392,6 @@ p {
 @media (max-width: 1300px) {
   .hero__image--center {
     display: block;
-  }
-}
-@media (max-width: 1300px) {
-  .hero__image--center {
     width: 100%;
     margin-bottom: 7.2rem;
   }
