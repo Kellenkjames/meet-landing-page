@@ -269,11 +269,8 @@ p {
 .footer {
   position: relative;
   overflow: visible;
-  background-image: url("../../../assets/desktop/image-footer.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
   margin-top: 10.8rem;
+  background: url("../../../assets/desktop/image-footer.jpg") center/cover no-repeat;
 }
 @media (max-width: 1300px) {
   .footer {
@@ -318,6 +315,7 @@ p {
   flex-wrap: nowrap;
   gap: 3.2rem;
   min-height: 31.2rem;
+  text-align: left;
 }
 @media (max-width: 1300px) {
   .footer__cta {
@@ -328,11 +326,12 @@ p {
     align-items: center;
     margin-block: 6.4rem;
     min-height: auto;
+    text-align: center;
   }
 }
 @media (max-width: 600px) {
   .footer__cta {
-    text-align: center;
+    margin-block: 5.6rem;
   }
 }
 .footer__title {
@@ -360,7 +359,6 @@ p {
 @media (max-width: 1300px) {
   .footer__desc {
     max-width: 75%;
-    text-align: center;
   }
 }
 

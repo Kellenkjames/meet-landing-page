@@ -1,11 +1,12 @@
+@import '../abstracts/variables';
+@import '../abstracts/mixins';
+
 .footer {
   position: relative;
   overflow: visible;
-  background-image: url('../../../assets/desktop/image-footer.jpg');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
   margin-top: 10.8rem;
+  background: url('../../../assets/desktop/image-footer.jpg') center/cover
+    no-repeat;
 
   @include respond-to(xl-sm) {
     background-image: url('../../../assets/tablet/image-footer.jpg');
@@ -20,7 +21,7 @@
     content: '';
     position: absolute;
     inset: 0;
-    background-color: rgba(77, 150, 169, 0.8); // overlay
+    background-color: rgba(77, 150, 169, 0.8);
     z-index: 0;
   }
 
@@ -43,15 +44,17 @@
     flex-wrap: nowrap;
     gap: $space-400;
     min-height: 31.2rem;
+    text-align: left;
 
     @include respond-to(xl-sm) {
       @include flex-column;
-      margin-block: 6.4rem;
+      margin-block: $space-800;
       min-height: auto;
+      text-align: center;
     }
 
     @include respond-to(sm) {
-      text-align: center;
+      margin-block: $space-700;
     }
   }
 
@@ -67,7 +70,6 @@
 
     @include respond-to(xl-sm) {
       max-width: 75%;
-      text-align: center;
     }
   }
 }
