@@ -193,24 +193,25 @@ p {
   flex-wrap: wrap;
   gap: 3.2rem;
 }
+.images__img {
+  width: 100%;
+  max-width: 25.6rem;
+  height: 25.6rem;
+  border-radius: 0.8rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
 @media (max-width: 1300px) {
   .images {
     justify-content: center;
     gap: 2.4rem;
   }
-  .images .images__img {
+  .images__img {
+    /* Force two images per row: (50% - gap) prevents overflow */
     flex: 1 1 calc(50% - 2.4rem);
     max-width: calc(50% - 2.4rem);
     height: auto;
   }
-}
-.images__img {
-  width: 100%;
-  max-width: 25.6rem;
-  height: 25.6rem;
-  border-radius: 1rem;
-  -o-object-fit: cover;
-     object-fit: cover;
 }
 
 .text-content {
