@@ -5,16 +5,16 @@
   padding: $space-1400 $space-1000;
 
   @include respond-to(sm) {
-    padding: $space-500 $space-300;
+    padding: $space-1000 $space-300;
   }
 
   &__inner {
     @include flex-column;
-    gap: 6.4rem;
+    gap: $space-800;
     margin-block: $space-700 $space-900;
 
     @include respond-to(xl-sm) {
-      margin-block: $space-700 6.4rem;
+      margin-block: $space-700 $space-800;
     }
   }
 }
