@@ -1,21 +1,21 @@
 // ABSTRACTS
-@import '../styles/abstracts/mixins';
-@import '../styles/abstracts/typography';
-@import '../styles/abstracts/variables';
+@import './abstracts/mixins';
+@import './abstracts/typography';
+@import './abstracts/variables';
 
 // BASE
-@import '../styles/base/global';
-@import '../styles/base/reset';
+@import './base/global';
+@import './base/reset';
 
 // COMPONENTS
-@import '../styles/components/button-blue';
-@import '../styles/components/button-purple';
-@import '../styles/components/number';
-@import '../styles/components/images';
-@import '../styles/components/text-content';
+@import './components/button-blue';
+@import './components/button-purple';
+@import './components/number';
+@import './components/images';
+@import './components/text-content';
 
 // LAYOUT
-@import '../styles/layout.scss/footer';
-@import '../styles/layout.scss/hero';
-@import '../styles/layout.scss/main-content';
-@import '../styles/layout.scss/nav';
+@import './layout.scss/footer';
+@import './layout.scss/hero';
+@import './layout.scss/main-content';
+@import './layout.scss/nav';
