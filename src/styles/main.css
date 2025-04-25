@@ -485,15 +485,15 @@ p {
   align-items: center;
   padding-top: 8rem;
 }
-.nav img {
-  width: auto;
-  height: auto;
-  max-width: 100%;
-  -o-object-fit: contain;
-     object-fit: contain;
-}
 @media (max-width: 1300px) {
   .nav {
     padding-top: 4.8rem;
   }
+}
+.nav img {
+  max-width: 100%;
+  height: auto;
+  -o-object-fit: contain;
+     object-fit: contain;
+  display: block;
 }/*# sourceMappingURL=main.css.map */
