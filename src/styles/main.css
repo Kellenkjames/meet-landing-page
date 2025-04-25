@@ -38,6 +38,9 @@ body {
   min-height: 100vh;
   overflow-x: hidden;
   background-color: #fafafa;
+  font-size: 1.8rem;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 .visually-hidden {
