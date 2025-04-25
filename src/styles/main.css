@@ -5,8 +5,8 @@ html {
 
 body {
   font-family: "Red Hat Display", sans-serif;
+  font-size: 1.8rem;
   font-weight: 500;
-  line-height: 1.5;
   color: #87879d;
   background-color: #fafafa;
 }
@@ -17,19 +17,16 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: inherit;
-  font-weight: 500;
-  color: #28283d;
-  line-height: 1.1;
   margin: 0;
+  color: #28283d;
 }
 
 p {
-  margin-bottom: 1.6rem;
+  margin: 0;
 }
 
 strong {
-  font-weight: 500;
+  font-weight: 900;
 }
 
 em {
@@ -307,6 +304,7 @@ p {
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: nowrap;
   gap: 3.2rem;
   min-height: 31.2rem;
 }

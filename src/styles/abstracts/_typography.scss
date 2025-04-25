@@ -9,34 +9,31 @@ html {
 
 body {
   font-family: $font-primary;
+  font-size: $font-body;
   font-weight: $font-weight-medium;
-  line-height: 1.5;
   color: $color-body;
   background-color: $color-bg;
 }
 
-// Headings
+// Headings (reset margins, keep clean defaults)
 h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
-  font-family: inherit;
-  font-weight: $font-weight-medium;
-  color: $color-heading;
-  line-height: 1.1;
   margin: 0;
+  color: $color-heading;
 }
 
 // Paragraphs
 p {
-  margin-bottom: $space-200;
+  margin: 0;
 }
 
 // Emphasis
 strong {
-  font-weight: $font-weight-medium;
+  font-weight: $font-weight-black;
 }
 
 em {
