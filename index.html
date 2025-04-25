@@ -21,96 +21,104 @@
     <link href="./src/styles/main.css" rel="stylesheet" />
   </head>
   <body>
-    <nav class="nav">
-      <img src="./assets/logo.svg" alt="meet logo" />
-    </nav>
-    <section class="hero">
-      <div class="hero__layout">
-        <!-- Left Image: Only visible on desktop -->
-        <img
-          class="hero__image hero__image--left"
-          src="./assets/desktop/image-hero-left.png"
-          alt=""
-          aria-hidden="true"
-        />
+    <header>
+      <nav class="nav">
+        <img src="./assets/logo.svg" alt="meet logo" />
+      </nav>
+    </header>
 
-        <!-- Center Image: Only visible on tablet/mobile -->
-        <img
-          class="hero__image hero__image--center"
-          src="./assets/tablet/image-hero.png"
-          alt=""
-        />
+    <main>
+      <section class="hero">
+        <div class="hero__layout">
+          <img
+            class="hero__image hero__image--left"
+            src="./assets/desktop/image-hero-left.png"
+            alt=""
+            aria-hidden="true"
+            role="presentation"
+          />
 
-        <header class="hero__content">
-          <h1 class="hero__title">Group Chat for Everyone</h1>
-          <h2 class="hero__subtitle">
-            Meet makes it easy to connect with others face-to-face virtually and
-            collaborate across any device.
-          </h2>
-          <div class="hero__cta-group">
-            <a href="#" class="button button--blue"
-              >Download <span>v1.3</span></a
-            >
-            <a href="#" class="button button--purple">What is it?</a>
+          <img
+            class="hero__image hero__image--center"
+            src="./assets/tablet/image-hero.png"
+            alt=""
+            role="presentation"
+          />
+
+          <header class="hero__content">
+            <h1 class="hero__title">Group Chat for Everyone</h1>
+            <h2 class="hero__subtitle">
+              Meet makes it easy to connect with others face-to-face virtually
+              and collaborate across any device.
+            </h2>
+            <div class="hero__cta-group">
+              <a href="#" class="button button--blue"
+                >Download <span>v1.3</span></a
+              >
+              <a href="#" class="button button--purple">What is it?</a>
+            </div>
+          </header>
+
+          <img
+            class="hero__image hero__image--right"
+            src="./assets/desktop/image-hero-right.png"
+            alt=""
+            aria-hidden="true"
+            role="presentation"
+          />
+        </div>
+      </section>
+
+      <section class="main_content">
+        <div class="container main_content__inner">
+          <div class="number" aria-hidden="true">
+            <span class="number__value">01</span>
           </div>
-        </header>
+          <div class="images" aria-label="User interaction collage">
+            <img
+              loading="lazy"
+              class="images__img"
+              src="./assets/desktop/image-woman-in-videocall.jpg"
+              alt="woman in video call"
+            />
+            <img
+              loading="lazy"
+              class="images__img"
+              src="./assets/desktop/image-women-videochatting.jpg"
+              alt="woman video chatting"
+            />
+            <img
+              loading="lazy"
+              class="images__img"
+              src="./assets/desktop/image-men-in-meeting.jpg"
+              alt="men in meeting"
+            />
+            <img
+              loading="lazy"
+              class="images__img"
+              src="./assets/desktop/image-man-texting.jpg"
+              alt="man texting"
+            />
+          </div>
+        </div>
 
-        <!-- Right Image: Only visible on desktop -->
-        <img
-          class="hero__image hero__image--right"
-          src="./assets/desktop/image-hero-right.png"
-          alt=""
-          aria-hidden="true"
-        />
-      </div>
-    </section>
-    <section class="main_content">
-      <div class="container main_content__inner">
-        <div class="number" aria-hidden="true">
-          <span class="number__value">01</span>
+        <div class="text-content">
+          <header class="text-content__header">
+            <h2 class="text-content__title">Built for Modern Use</h2>
+            <h3 class="text-content__subtitle">
+              Smarter meetings, all in one place
+            </h3>
+          </header>
+          <p class="text-content__desc">
+            Send messages, share files, show your screen, and record your
+            meetings — all in one workspace. Control who can join with
+            invite-only team access, data encryption, and data export.
+          </p>
         </div>
-        <div class="images" aria-label="User interaction collage">
-          <img
-            loading="lazy"
-            class="images__img"
-            src="./assets/desktop/image-woman-in-videocall.jpg"
-            alt="woman in video call"
-          />
-          <img
-            loading="lazy"
-            class="images__img"
-            src="./assets/desktop/image-women-videochatting.jpg"
-            alt="woman video chatting"
-          />
-          <img
-            loading="lazy"
-            class="images__img"
-            src="./assets/desktop/image-men-in-meeting.jpg"
-            alt="men in meeting"
-          />
-          <img
-            loading="lazy"
-            class="images__img"
-            src="./assets/desktop/image-man-texting.jpg"
-            alt="man texting"
-          />
-        </div>
-      </div>
-      <div class="text-content">
-        <header class="text-content__header">
-          <h3 class="text-content__title">Built for Modern Use</h3>
-          <h4 class="text-content__subtitle">
-            Smarter meetings, all in one place
-          </h4>
-        </header>
-        <p class="text-content__desc">
-          Send messages, share files, show your screen, and record your meetings
-          — all in one workspace. Control who can join with invite-only team
-          access, data encryption, and data export.
-        </p>
-      </div>
-    </section>
-    <footer class="footer">
+      </section>
+    </main>
+
+    <footer class="footer" role="contentinfo">
       <div class="container footer__inner">
         <div class="number" aria-hidden="true">
           <span class="number__value">02</span>
