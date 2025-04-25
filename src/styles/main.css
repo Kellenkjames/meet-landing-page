@@ -113,7 +113,7 @@ p {
   cursor: pointer;
   transition: background-color 0.3s ease-in-out;
   font-weight: 900;
-  font-family: inherit;
+  font-family: "Red Hat Display", sans-serif, sans-serif;
   font-size: 1.6rem;
   line-height: 1.5;
   letter-spacing: 0;
@@ -138,7 +138,7 @@ p {
   cursor: pointer;
   transition: background-color 0.3s ease-in-out;
   font-weight: 900;
-  font-family: inherit;
+  font-family: "Red Hat Display", sans-serif, sans-serif;
   font-size: 1.6rem;
   line-height: 1.5;
   letter-spacing: 0;
@@ -155,6 +155,8 @@ p {
 
 .number {
   display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   position: relative;
@@ -175,7 +177,7 @@ p {
 }
 .number__value {
   font-weight: 900;
-  font-family: inherit;
+  font-family: "Red Hat Display", sans-serif, sans-serif;
   font-size: 1.6rem;
   line-height: 1.5;
   letter-spacing: 0;
@@ -184,6 +186,8 @@ p {
 
 .images {
   display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
@@ -212,6 +216,8 @@ p {
 .text-content {
   display: flex;
   flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
   align-items: center;
   text-align: center;
   max-width: 54.4rem;
@@ -224,7 +230,7 @@ p {
 }
 .text-content__title {
   font-weight: 900;
-  font-family: inherit;
+  font-family: "Red Hat Display", sans-serif, sans-serif;
   font-size: 1.6rem;
   line-height: 1.2;
   letter-spacing: 0.4rem;
@@ -234,7 +240,7 @@ p {
 }
 .text-content__subtitle {
   font-weight: 900;
-  font-family: inherit;
+  font-family: "Red Hat Display", sans-serif, sans-serif;
   font-size: 4rem;
   line-height: 1.2;
   letter-spacing: 0;
@@ -246,7 +252,7 @@ p {
 }
 .text-content__desc {
   font-weight: 500;
-  font-family: inherit;
+  font-family: "Red Hat Display", sans-serif, sans-serif;
   font-size: 1.8rem;
   line-height: 1.6;
   letter-spacing: 0;
@@ -282,6 +288,8 @@ p {
 .footer__inner {
   display: flex;
   flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
   align-items: center;
   position: relative;
   z-index: 1;
@@ -295,6 +303,8 @@ p {
 }
 .footer__cta {
   display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
   gap: 3.2rem;
@@ -304,6 +314,8 @@ p {
   .footer__cta {
     display: flex;
     flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
     align-items: center;
     margin-block: 6.4rem;
     min-height: auto;
@@ -316,7 +328,7 @@ p {
 }
 .footer__title {
   font-weight: 900;
-  font-family: inherit;
+  font-family: "Red Hat Display", sans-serif, sans-serif;
   font-size: 4rem;
   line-height: 1.2;
   letter-spacing: 0;
@@ -329,7 +341,7 @@ p {
 }
 .footer__desc {
   font-weight: 500;
-  font-family: inherit;
+  font-family: "Red Hat Display", sans-serif, sans-serif;
   font-size: 1.8rem;
   line-height: 1.6;
   letter-spacing: 0;
@@ -350,6 +362,8 @@ p {
 }
 .hero__layout {
   display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
@@ -358,6 +372,8 @@ p {
   .hero__layout {
     display: flex;
     flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
     align-items: center;
     justify-content: center;
     gap: 2.4rem;
@@ -400,6 +416,8 @@ p {
 .hero__content {
   display: flex;
   flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
   align-items: center;
   text-align: center;
   max-width: 44.83rem;
@@ -407,7 +425,7 @@ p {
 }
 .hero__title {
   font-weight: 900;
-  font-family: inherit;
+  font-family: "Red Hat Display", sans-serif, sans-serif;
   font-size: 6.4rem;
   line-height: 1.1;
   letter-spacing: 0;
@@ -419,7 +437,7 @@ p {
 }
 .hero__subtitle {
   font-weight: 500;
-  font-family: inherit;
+  font-family: "Red Hat Display", sans-serif, sans-serif;
   font-size: 1.8rem;
   line-height: 1.6;
   letter-spacing: 0;
@@ -429,6 +447,7 @@ p {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
+  align-items: center;
   gap: 1.7rem;
 }
 
@@ -443,6 +462,8 @@ p {
 .main_content__inner {
   display: flex;
   flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
   align-items: center;
   gap: 6.4rem;
   margin-block: 5.6rem 7.2rem;
@@ -455,6 +476,8 @@ p {
 
 .nav {
   display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   padding-top: 8rem;

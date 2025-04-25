@@ -1,11 +1,10 @@
 @import '../abstracts/variables';
 
-// TYPOGRAPHY
-
+// TYPOGRAPHY MIXINS
 @mixin text-preset-1 {
   font-weight: $font-weight-black;
-  font-family: inherit;
-  font-size: 6.4rem; // 64px
+  font-family: $font-primary, sans-serif;
+  font-size: 6.4rem;
   line-height: 1.1;
   letter-spacing: 0;
 
@@ -16,8 +15,8 @@
 
 @mixin text-preset-2 {
   font-weight: $font-weight-black;
-  font-family: inherit;
-  font-size: 4rem; // 40px
+  font-family: $font-primary, sans-serif;
+  font-size: 4rem;
   line-height: 1.2;
   letter-spacing: 0;
 
@@ -28,35 +27,35 @@
 
 @mixin text-preset-3 {
   font-weight: $font-weight-black;
-  font-family: inherit;
-  font-size: 1.6rem; // 16px (uppercase heading)
+  font-family: $font-primary, sans-serif;
+  font-size: 1.6rem;
   line-height: 1.2;
   letter-spacing: 0.4rem;
 }
 
 @mixin text-preset-4 {
   font-weight: $font-weight-medium;
-  font-family: inherit;
-  font-size: 1.8rem; // 18px
+  font-family: $font-primary, sans-serif;
+  font-size: 1.8rem;
   line-height: 1.6;
   letter-spacing: 0;
 }
 
 @mixin text-preset-5 {
   font-weight: $font-weight-black;
-  font-family: inherit;
-  font-size: 1.6rem; // 16px
+  font-family: $font-primary, sans-serif;
+  font-size: 1.6rem;
   line-height: 1.5;
   letter-spacing: 0;
 }
 
-// BUTTONS
+// BUTTON MIXIN
 @mixin button-base {
   display: inline-flex;
   justify-content: center;
   align-items: center;
   padding: $space-200 $space-500;
-  border-radius: 2.9rem;
+  border-radius: $radius-pill;
   text-decoration: none;
   cursor: pointer;
   transition: background-color 0.3s ease-in-out;
@@ -64,36 +63,41 @@
   @include text-preset-5;
 }
 
-// FLEXBOX UTILITIES
+// FLEX UTILITIES
+$flex-alignments: (
+  center: center,
+  start: flex-start,
+  end: flex-end,
+  between: space-between,
+  around: space-around,
+  evenly: space-evenly,
+);
 
-@mixin flex-row {
+@mixin flex-row($justify: center, $align: center, $wrap: wrap) {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
+  flex-wrap: $wrap;
+  justify-content: map-get($flex-alignments, $justify);
+  align-items: map-get($flex-alignments, $align);
 }
 
-@mixin flex-column {
+@mixin flex-column($justify: center, $align: center, $wrap: nowrap) {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  flex-wrap: $wrap;
+  justify-content: map-get($flex-alignments, $justify);
+  align-items: map-get($flex-alignments, $align);
 }
 
 @mixin flex-center {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include flex-row(center, center);
 }
 
 @mixin space-between-center {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  @include flex-row(between, center);
 }
 
 // RESPONSIVE BREAKPOINTS
-
-// max-width: (mobile-first)
 @mixin respond-to($breakpoint) {
   @if map-has-key($breakpoints, $breakpoint) {
     @media (max-width: map-get($breakpoints, $breakpoint)) {
@@ -104,7 +108,6 @@
   }
 }
 
-// min-width (desktop-first)
 @mixin respond-up($breakpoint) {
   @if map-has-key($breakpoints, $breakpoint) {
     @media (min-width: map-get($breakpoints, $breakpoint)) {
