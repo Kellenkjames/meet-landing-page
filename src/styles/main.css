@@ -124,7 +124,7 @@ p {
   color: #8fe3f9;
   margin-left: 0.4rem;
 }
-.button--blue:hover {
+.button--blue:hover, .button--blue:focus-visible {
   background-color: #6dacbc;
 }
 
@@ -149,7 +149,7 @@ p {
   color: #d9b8ff;
   margin-left: 0.4rem;
 }
-.button--purple:hover {
+.button--purple:hover, .button--purple:focus-visible {
   background-color: #9f81c2;
 }
 

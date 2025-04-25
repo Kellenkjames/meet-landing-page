@@ -10,10 +10,11 @@ $purple-hover: lighten($purple-600, 10%);
 
   span {
     color: $purple-300;
-    margin-left: 0.4rem;
+    margin-left: $space-50;
   }
 
-  &:hover {
+  &:hover,
+  &:focus-visible {
     background-color: $purple-hover;
   }
 }
