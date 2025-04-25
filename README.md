@@ -1,39 +1,49 @@
-## Project Overview
+## 🎨 Meet Landing Page — Frontend Mentor Challenge
 
-This project builds a responsive **Meet Landing Page** based on a high-fidelity design from Frontend Mentor. It emphasizes clean, component-based SCSS architecture, mobile-first layout strategy using Flexbox, and best practices for responsive imagery and accessibility.
+A fully responsive landing page built from a high-fidelity design.
+Built using semantic HTML5, modern SCSS with design tokens, and a scalable BEM architecture.
 
-- Responsive layout across mobile, tablet, and desktop breakpoints
-- Semantic HTML5 structure with ARIA-aware components
-- Flexbox-based layout architecture (no external frameworks)
-- Scalable SCSS partials (BEM naming, tokens, and modular structure)
-- Responsive image handling via `<picture>` and `srcset`
-- [Link to Frontend Mentor Challenge](https://www.frontendmentor.io/challenges/meet-landing-page-rbTDS6OUR)
+[🔗 Live Demo](https://kellenkjames.github.io/meet-landing-page/)
+[🎯 Frontend Mentor Challenge](https://www.frontendmentor.io/challenges/meet-landing-page-rbTDS6OUR)
 
 ---
 
-## Technologies Used
+## 🚀 Features
+
+- Responsive design for mobile, tablet, and desktop
+- Custom SCSS design system with tokens and utility mixins
+- Flexbox layout with intentional breakpoint logic
+- Accessible semantic HTML (ARIA + heading structure)
+- Optimized imagery using lazy loading and responsive images
+- Clean modular structure using BEM + partials
+- Built without any UI frameworks or libraries (vanilla HTML + SCSS)
+
+---
+
+## 🧱 Tech Stack
 
 - HTML5
-- CSS3 (Flexbox, Media Queries)
-- SCSS (Partials, Variables, Mixins, BEM) – [Sass Docs](https://sass-lang.com/documentation)
-- GitHub Pages (for live deployment)
-- Figma (for design implementation)
+- SCSS (BEM, Partials, Tokens, Mixins)
+- Flexbox & Media Queries
+- Git / GitHub
+- GitHub Pages (Deployment)
+- Figma (Design Reference)
 
 ---
 
-## Screenshots
+## 🖼️ Screenshots
 
-| Desktop View                                                       | Mobile View                                                      |
-| ------------------------------------------------------------------ | ---------------------------------------------------------------- |
-| ![Desktop screenshot](./assets/screenshots/desktop_screenshot.png) | ![Mobile screenshot](./assets/screenshots/mobile_screenshot.png) |
+| Desktop                                                 | Mobile                                                |
+| ------------------------------------------------------- | ----------------------------------------------------- |
+| ![Desktop Screenshot](./assets/screenshots/desktop.png) | ![Mobile Screenshot](./assets/screenshots/mobile.png) |
 
-> 📸 _Screenshots to be added after final polish and QA pass_
+> 📸 _Screenshots will be added once design polish and QA pass is complete_
 
 ---
 
-## Folder Structure
+## 📁 Project Structure
 
-<pre> ```bash meet-landing-page/ ├── index.html ├── assets/ │ ├── images/ │ ├── fonts/ │ └── screenshots/ ├── src/ │ └── styles/ │ ├── abstracts/ │ │ ├── _variables.scss │ │ ├── _mixins.scss │ │ └── _typography.scss │ ├── base/ │ │ ├── _reset.scss │ │ └── _global.scss │ ├── components/ │ │ ├── _button-blue.scss │ │ ├── _button-purple.scss │ │ ├── _logo.scss │ │ └── _number.scss │ ├── layout/ │ │ ├── _nav.scss │ │ ├── _hero.scss │ │ ├── _main-content.scss │ │ └── _footer.scss │ └── main.scss ├── README.md ``` </pre>
+<pre> ``` meet-landing-page/ ├── index.html ├── assets/ │ ├── images/ │ ├── fonts/ │ └── screenshots/ ├── src/ │ └── styles/ │ ├── abstracts/ # Design tokens, mixins, breakpoints │ ├── base/ # Reset + global styles │ ├── components/ # Reusable UI blocks (buttons, images) │ ├── layout/ # Page-level sections (nav, hero, footer) │ └── main.scss # Master SCSS import file ├── style.css # Compiled output └── README.md ``` </pre>
 
 ---
 
@@ -52,32 +62,36 @@ This project builds a responsive **Meet Landing Page** based on a high-fidelity 
 
 ---
 
-## Key Learning Objectives
+## ⏱️ Time Estimates
 
-- Practice building a multi-section landing page using semantic HTML and Flexbox
-- Learn to serve optimized, responsive images using the `<picture>` element
-- Strengthen SCSS partial organization and design token usage
-- Understand responsive layout shifts across devices
-- Explore cross-browser consistency and hover state handling
-
----
-
-## Improvements for the Future
-
-- Implement mobile navigation toggle using vanilla JS or framework integration
-- Add animated transitions for button hover states
-- Perform full accessibility audit (Lighthouse + axe-core)
-- Explore converting to a reusable component-based system (React or Angular)
+| Task                         | Time Spent  |
+| ---------------------------- | ----------- |
+| Initial Setup & Architecture | 1.5 hrs     |
+| SCSS Tokens + Utilities      | 1.5 hrs     |
+| Hero + Nav Layout            | 2 hrs       |
+| Main Content + Footer        | 2.5 hrs     |
+| Responsive & Polish          | 2.5 hrs     |
+| Final Refactor & QA          | 2 hrs       |
+| **Total**                    | **~12 hrs** |
 
 ---
 
-## Time Estimation
+## 🧠 Key Learnings
 
-| Task                              | Estimated Time |
-| --------------------------------- | -------------- |
-| Repo Initialization + Setup       | 30 mins        |
-| SCSS Architecture + Base Styles   | 1.5 hours      |
-| Layout Structure (HTML + Flexbox) | 2–3 hours      |
-| Responsive Image Handling         | 1.5 hours      |
-| Design Polish + QA                | 1.5 hours      |
-| Total Estimated Time              | ~7–8 hours     |
+- How to structure scalable SCSS architecture
+- Implementing design systems with tokens + mixins
+- Using `@media` breakpoints with maps and mixins
+- Writing clean, semantic, accessible HTML
+- Advanced Flexbox layout control using `flex`, `gap`, `transform`, and more
+- Making pixel-perfect decisions that mirror real-world frontend workflows
+
+---
+
+## ✅ Improvements (If time allowed)
+
+- Add animation transitions to hero and buttons
+- Add JS for scroll-triggered transitions
+- Modularize the layout further using components
+- Consider using `<picture>` element for hero images
+
+---
