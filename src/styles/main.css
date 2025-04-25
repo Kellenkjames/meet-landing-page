@@ -160,19 +160,20 @@ p {
   justify-content: center;
   align-items: center;
   position: relative;
-  height: 5.6rem;
   width: 5.6rem;
+  height: 5.6rem;
   border: 1px solid #d1d1df;
-  border-radius: 100%;
+  border-radius: 50%;
   background-color: #fafafa;
 }
 .number::before {
   content: "";
   position: absolute;
-  border-left: 0.1rem solid #d1d1df;
-  height: 8rem;
-  left: 50%;
   bottom: 100%;
+  left: 50%;
+  height: 8rem;
+  width: 0.1rem;
+  background-color: #d1d1df;
   transform: translateX(-50%);
 }
 .number__value {

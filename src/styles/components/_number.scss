@@ -4,19 +4,20 @@
 .number {
   @include flex-center;
   position: relative;
-  height: 5.6rem;
-  width: 5.6rem;
+  width: $space-700;
+  height: $space-700;
   border: 1px solid $slate-300;
-  border-radius: 100%;
+  border-radius: 50%;
   background-color: $white;
 
   &::before {
     content: '';
     position: absolute;
-    border-left: 0.1rem solid $slate-300;
-    height: 8rem;
-    left: 50%;
     bottom: 100%;
+    left: 50%;
+    height: $space-1000;
+    width: 0.1rem;
+    background-color: $slate-300;
     transform: translateX(-50%);
   }
 
