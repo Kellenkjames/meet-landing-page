@@ -1,14 +1,13 @@
-## 🎨 Meet Landing Page — Frontend Mentor Challenge
+## Meet Landing Page — Frontend Mentor Challenge
 
 A fully responsive landing page built from a high-fidelity design.
 Built using semantic HTML5, modern SCSS with design tokens, and a scalable BEM architecture.
 
 [🔗 Live Demo](https://kellenkjames.github.io/meet-landing-page/)
-[🎯 Frontend Mentor Challenge](https://www.frontendmentor.io/challenges/meet-landing-page-rbTDS6OUR)
 
 ---
 
-## 🚀 Features
+## Features
 
 - Responsive design for mobile, tablet, and desktop
 - Custom SCSS design system with tokens and utility mixins
@@ -20,7 +19,7 @@ Built using semantic HTML5, modern SCSS with design tokens, and a scalable BEM a
 
 ---
 
-## 🧱 Tech Stack
+## Tech Stack
 
 - HTML5
 - SCSS (BEM, Partials, Tokens, Mixins)
@@ -31,17 +30,15 @@ Built using semantic HTML5, modern SCSS with design tokens, and a scalable BEM a
 
 ---
 
-## 🖼️ Screenshots
+## Screenshots
 
 | Desktop                                                 | Mobile                                                |
 | ------------------------------------------------------- | ----------------------------------------------------- |
 | ![Desktop Screenshot](./assets/screenshots/desktop.png) | ![Mobile Screenshot](./assets/screenshots/mobile.png) |
 
-> 📸 _Screenshots will be added once design polish and QA pass is complete_
-
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 <pre> ``` meet-landing-page/ ├── index.html ├── assets/ │ ├── images/ │ ├── fonts/ │ └── screenshots/ ├── src/ │ └── styles/ │ ├── abstracts/ # Design tokens, mixins, breakpoints │ ├── base/ # Reset + global styles │ ├── components/ # Reusable UI blocks (buttons, images) │ ├── layout/ # Page-level sections (nav, hero, footer) │ └── main.scss # Master SCSS import file ├── style.css # Compiled output └── README.md ``` </pre>
 
@@ -76,7 +73,7 @@ Built using semantic HTML5, modern SCSS with design tokens, and a scalable BEM a
 
 ---
 
-## 🧠 Key Learnings
+## Key Learnings
 
 - How to structure scalable SCSS architecture
 - Implementing design systems with tokens + mixins
@@ -87,7 +84,7 @@ Built using semantic HTML5, modern SCSS with design tokens, and a scalable BEM a
 
 ---
 
-## ✅ Improvements (If time allowed)
+## Improvements (If time allowed)
 
 - Add animation transitions to hero and buttons
 - Add JS for scroll-triggered transitions
