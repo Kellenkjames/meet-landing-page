@@ -191,22 +191,29 @@ p {
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   gap: 3.2rem;
 }
+@media (max-width: 1300px) {
+  .images {
+    flex-wrap: wrap;
+  }
+}
+@media (max-width: 600px) {
+  .images {
+    justify-content: center;
+    gap: 2.4rem;
+  }
+}
 .images__img {
-  width: 100%;
-  max-width: 25.6rem;
+  flex: 1 1 0;
+  min-width: 0;
   height: 25.6rem;
   border-radius: 0.8rem;
   -o-object-fit: cover;
      object-fit: cover;
 }
-@media (max-width: 1300px) {
-  .images {
-    justify-content: center;
-    gap: 2.4rem;
-  }
+@media (max-width: 600px) {
   .images__img {
     /* Force two images per row: (50% - gap) prevents overflow */
     flex: 1 1 calc(50% - 2.4rem);

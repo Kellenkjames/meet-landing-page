@@ -3,22 +3,26 @@
 
 .images {
   @include space-between-center;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   gap: $space-400;
 
+  @include respond-to(xl-sm) {
+    flex-wrap: wrap;
+  }
+
+  @include respond-to(sm) {
+    justify-content: center;
+    gap: $space-300;
+  }
+
   &__img {
-    width: 100%;
-    max-width: 25.6rem;
+    flex: 1 1 0; // allow shrink/grow to fill available space
+    min-width: 0; // fix edge-case overflow in flex containers
     height: 25.6rem;
     border-radius: $radius-md;
     object-fit: cover;
-  }
 
-  @include respond-to(xl-sm) {
-    justify-content: center;
-    gap: $space-300;
-
-    &__img {
+    @include respond-to(sm) {
       /* Force two images per row: (50% - gap) prevents overflow */
       flex: 1 1 calc(50% - #{$space-300});
       max-width: calc(50% - #{$space-300});
