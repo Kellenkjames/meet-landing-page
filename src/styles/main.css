@@ -277,17 +277,17 @@ p {
   position: relative;
   overflow: visible;
   margin-top: 10.8rem;
-  background: url("../../../assets/desktop/image-footer.jpg") center/cover no-repeat;
+  background: url("https://kellenkjames.github.io/meet-landing-page/assets/desktop/image-footer.jpg") center/cover no-repeat;
 }
 @media (max-width: 1300px) {
   .footer {
-    background-image: url("../../../assets/tablet/image-footer.jpg");
+    background-image: url("https://kellenkjames.github.io/meet-landing-page/assets/tablet/image-footer.jpg");
     background-position: top center;
   }
 }
 @media (max-width: 600px) {
   .footer {
-    background-image: url("../../../assets/mobile/image-footer.jpg");
+    background-image: url("https://kellenkjames.github.io/meet-landing-page/assets/mobile/image-footer.jpg");
   }
 }
 .footer::before {
