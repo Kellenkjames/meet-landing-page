@@ -5,16 +5,15 @@
   position: relative;
   overflow: visible;
   margin-top: 10.8rem;
-  background: url('../../../assets/desktop/image-footer.jpg') center/cover
-    no-repeat;
+  background: url('./assets/desktop/image-footer.jpg') center/cover no-repeat;
 
   @include respond-to(xl-sm) {
-    background-image: url('../../../assets/tablet/image-footer.jpg');
+    background-image: url('./assets/tablet/image-footer.jpg');
     background-position: top center;
   }
 
   @include respond-to(sm) {
-    background-image: url('../../../assets/mobile/image-footer.jpg');
+    background-image: url('./assets/mobile/image-footer.jpg');
   }
 
   &::before {
